@@ -101,6 +101,10 @@ img{
     color: #2e2f42;
 }
 
+.header-nav-item-link{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-nav-item-link:focus,
 .header-nav-item-link:hover{
     color: #404bbf;
@@ -113,11 +117,7 @@ img{
     border-radius: 2px;
     width: 48px;
     height: 4px;
-    margin: 20px auto;
     background-color: #404BBF;
-    /* TODO
-        display block do unnecessary position
-    */
 }
 /* address */
 
@@ -137,6 +137,7 @@ img{
 
 .header-address-item-link{
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-item-link:hover,
@@ -186,6 +187,7 @@ img{
     display: block;
     min-width: 169px;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:focus,
@@ -198,6 +200,23 @@ img{
 .benefits-list{
     display: flex;
     gap: 24px;
+}
+
+.benefits-item-visualization{
+    border: 1px solid #8E8F99;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: #F4F4FD;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.benefits-item-visualization .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .benefits-title{
@@ -286,6 +305,12 @@ img{
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-members-social-links .link:focus,
+.team-members-social-links .link:hover{
+    background-color: #404BBF;
 }
 
 .team-members-social-links .icon{
@@ -310,6 +335,11 @@ img{
     column-gap: 24px;
 }
 
+.portfolio-item{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:focus,
 .portfolio-item:hover{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
                 0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -397,6 +427,12 @@ img{
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-media-links .link:focus,
+.footer-social-media-links .link:hover{
+    background-color: #31D0AA;
 }
 
 .footer-social-media-links .icon{
