@@ -104,6 +104,7 @@ img{
 .header-nav-item-link{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    color: #404bbf;
 }
 
 .header-nav-item-link:focus,
@@ -116,7 +117,7 @@ img{
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     border-radius: 2px;
     width: 100%;
     height: 4px;
@@ -158,13 +159,15 @@ img{
     color: white;
     background-image: linear-gradient(
         to bottom,
-        rgba(46, 47, 66, 0.75),
-        rgba(46, 47, 66, 0.75)
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero-banner.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     padding: 188px 0px;
+    max-width: 1440px;
+    background-size: cover;
 }
 
 .hero-title{
@@ -211,15 +214,10 @@ img{
     height: 112px;
     border-radius: 4px;
     background-color: #F4F4FD;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 8px;
-}
-
-.benefits-item-visualization .icon{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .benefits-title{
@@ -294,6 +292,9 @@ img{
 }
 
 .team-members-social-links{
+}
+
+.team-members-social-list{
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -442,7 +443,7 @@ img{
     margin-bottom: 16px;
 }
 
-.footer-social-media-links{
+.footer-socail-media-list{
     display: flex;
     gap: 16px;
 }
