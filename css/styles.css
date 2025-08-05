@@ -406,7 +406,6 @@ img{
 
 .footer-about{
     margin-right: 120px;
-    align-items: baseline;
 }
 
 .footer-logo{
@@ -434,6 +433,7 @@ img{
 
 .footer .container{
     display: flex;
+    align-items: baseline;
 }
 
 .footer-social-media-title{
