@@ -404,6 +404,11 @@ img{
     padding: 100px 0;
 }
 
+.footer-about{
+    margin-right: 120px;
+    align-items: baseline;
+}
+
 .footer-logo{
     color:#4d5ae5;
     font-weight: 700;
@@ -429,7 +434,6 @@ img{
 
 .footer .container{
     display: flex;
-    gap: 120px;
 }
 
 .footer-social-media-title{
