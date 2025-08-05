@@ -104,10 +104,13 @@ img{
     color: #2e2f42;
 }
 
+.header-nav-item .first{
+    color: #404bbf;
+}
+
 .header-nav-item-link{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    color: #404bbf;
 }
 
 .header-nav-item-link:focus,
@@ -116,7 +119,7 @@ img{
 }
 
 
-.header-nav-item-link:active::after{
+.header-nav-item .first::after{
     content: "";
     position: absolute;
     left: 0;
